@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/im6"
+    android:layout_height="match_parent"
+    tools:context=".ScoreActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Your BMI Score is"
+        android:textSize="24sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/scoreTV"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:hint="21">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <TextView
+        android:layout_width="0dp"
+            android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"
+        android:text="You are: " />
+
+        <TextView
+            android:id="@+id/resultTv"
+            android:gravity="center"
+            android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+            android:textColor="#9C1111"
+            android:textStyle="bold"
+        android:hint="Normal"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/valueButton"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="show reference value">
+
+    </Button>
+
+
+</LinearLayout>

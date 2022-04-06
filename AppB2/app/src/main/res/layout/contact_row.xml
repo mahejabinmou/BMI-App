@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rowContactNameTV"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:text="Limon Chowdury"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rowCallBtn"
+            android:layout_below="@+id/rowContactNameTV"
+            android:src="@drawable/ic_baseline_call_24"
+            android:background="@drawable/btn_round_shape"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rowSmsBtn"
+            android:layout_marginStart="12dp"
+            android:layout_below="@+id/rowContactNameTV"
+            android:src="@drawable/ic_baseline_sms_24"
+            android:background="@drawable/btn_round_shape"
+            android:layout_toEndOf="@id/rowCallBtn"
+
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rowMapBtn"
+            android:layout_marginStart="12dp"
+            android:layout_below="@+id/rowContactNameTV"
+            android:src="@drawable/ic_baseline_map_24"
+            android:background="@drawable/btn_round_shape"
+           android:layout_toEndOf="@+id/rowEmailBtn"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rowEmailBtn"
+            android:layout_marginStart="12dp"
+            android:layout_below="@+id/rowContactNameTV"
+            android:src="@drawable/ic_baseline_email_24"
+            android:background="@drawable/btn_round_shape"
+            android:layout_toEndOf="@id/rowSmsBtn"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rowinfoBtn"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_baseline_info_24"
+            android:background="@drawable/btn_round_shape"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
